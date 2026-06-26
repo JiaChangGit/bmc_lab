@@ -1,0 +1,51 @@
+{
+  "system_power_budget_watts": 2800,
+  "gpus": [
+    { "id": "gpu0", "temperature_celsius": 56.0, "power_watts": 228.0, "throttled": false, "health": "OK" },
+    { "id": "gpu1", "temperature_celsius": 58.0, "power_watts": 234.0, "throttled": false, "health": "OK" },
+    { "id": "gpu2", "temperature_celsius": 57.0, "power_watts": 231.0, "throttled": false, "health": "OK" },
+    { "id": "gpu3", "temperature_celsius": 59.0, "power_watts": 238.0, "throttled": false, "health": "OK" },
+    { "id": "gpu4", "temperature_celsius": 55.0, "power_watts": 226.0, "throttled": false, "health": "OK" },
+    { "id": "gpu5", "temperature_celsius": 60.0, "power_watts": 242.0, "throttled": false, "health": "OK" },
+    { "id": "gpu6", "temperature_celsius": 57.0, "power_watts": 230.0, "throttled": false, "health": "OK" },
+    { "id": "gpu7", "temperature_celsius": 61.0, "power_watts": 247.0, "throttled": false, "health": "OK" }
+  ],
+  "fans": [
+    { "id": "fan0", "rpm": 3800, "pwm_percent": 40, "failed": false },
+    { "id": "fan1", "rpm": 3820, "pwm_percent": 40, "failed": false },
+    { "id": "fan2", "rpm": 3790, "pwm_percent": 40, "failed": false },
+    { "id": "fan3", "rpm": 3810, "pwm_percent": 40, "failed": false },
+    { "id": "fan4", "rpm": 3830, "pwm_percent": 40, "failed": false },
+    { "id": "fan5", "rpm": 3780, "pwm_percent": 40, "failed": false },
+    { "id": "fan6", "rpm": 3840, "pwm_percent": 40, "failed": false },
+    { "id": "fan7", "rpm": 3805, "pwm_percent": 40, "failed": false }
+  ],
+  "psus": [
+    { "id": "psu0", "output_watts": 545.0, "healthy": true },
+    { "id": "psu1", "output_watts": 548.0, "healthy": true },
+    { "id": "psu2", "output_watts": 547.0, "healthy": true },
+    { "id": "psu3", "output_watts": 544.0, "healthy": true }
+  ],
+  "nvmes": [
+    { "id": "nvme0", "temperature_celsius": 35.0, "health": "OK" },
+    { "id": "nvme1", "temperature_celsius": 36.0, "health": "OK" },
+    { "id": "nvme2", "temperature_celsius": 34.0, "health": "OK" },
+    { "id": "nvme3", "temperature_celsius": 35.0, "health": "OK" },
+    { "id": "nvme4", "temperature_celsius": 36.0, "health": "OK" },
+    { "id": "nvme5", "temperature_celsius": 37.0, "health": "OK" },
+    { "id": "nvme6", "temperature_celsius": 35.0, "health": "OK" },
+    { "id": "nvme7", "temperature_celsius": 34.0, "health": "OK" },
+    { "id": "nvme8", "temperature_celsius": 35.0, "health": "OK" },
+    { "id": "nvme9", "temperature_celsius": 36.0, "health": "OK" },
+    { "id": "nvme10", "temperature_celsius": 37.0, "health": "OK" },
+    { "id": "nvme11", "temperature_celsius": 35.0, "health": "OK" },
+    { "id": "nvme12", "temperature_celsius": 34.0, "health": "OK" },
+    { "id": "nvme13", "temperature_celsius": 36.0, "health": "OK" },
+    { "id": "nvme14", "temperature_celsius": 35.0, "health": "OK" },
+    { "id": "nvme15", "temperature_celsius": 36.0, "health": "OK" }
+  ],
+  "cpus": [
+    { "id": "cpu0", "model": "AMD EPYC 9654", "healthy": true },
+    { "id": "cpu1", "model": "AMD EPYC 9654", "healthy": true }
+  ]
+}

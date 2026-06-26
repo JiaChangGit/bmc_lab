@@ -1,0 +1,16 @@
+[Unit]
+Description=OpenBMC AI Server Management Stack
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/openbmc-ai-server-management-stack
+ExecStart=/opt/openbmc-ai-server-management-stack/build/ai-bmc-manager --config /opt/openbmc-ai-server-management-stack/config/ai_server_profile.json --port 8080
+Restart=on-failure
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

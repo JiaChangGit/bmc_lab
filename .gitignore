@@ -1,0 +1,276 @@
+# Merged from two uploaded .gitignore files.
+# Targets: C / C++ / CMake / Linux / Python / VS Code / Git / kernel module artifacts.
+# Duplicated rules were removed.
+
+### Project build/runtime ###
+build/
+runtime/
+.build_cache/
+
+### C / C++ ###
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+*.slo
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.lai
+
+# Shared objects
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+### Linux kernel / module build artifacts ###
+*.mod*
+*.cmd
+.*.cmd
+.tmp_versions/
+*.order
+*.symvers
+Mkfile.old
+dkms.conf
+
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeScripts
+Testing
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+CMakeUserPresets.json
+
+# External projects
+*-prefix/
+
+### Linux ###
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# .python-version
+
+# pipenv
+# Pipfile.lock
+
+# poetry
+# poetry.lock
+poetry.toml
+
+# pdm
+# pdm.lock
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / static analysis caches
+.spyderproject
+.spyproject
+.ropeproject
+/site
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+.ruff_cache/
+pyrightconfig.json
+
+### Visual Studio Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+.history
+*.vsix
+.ionide
+
+### Git merge / backup artifacts ###
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+### Misc ###
+*.tmp
+.DS_Store
+
+
+
+#########
+
+/mini-openbmc-platform-service/build/
+/mini-openbmc-platform-service/runtime/
+/mini-openbmc-platform-service/*.ko
+/mini-openbmc-platform-service/*.o
+/mini-openbmc-platform-service/*.mod
+/mini-openbmc-platform-service/*.mod.c
+/mini-openbmc-platform-service/*.order
+/mini-openbmc-platform-service/*.symvers
+/mini-openbmc-platform-service/.*.cmd
+
+
+# ── Kernel / module build artifacts ─────────────
+/openbmc-ai-server-management-stack/*.o
+/openbmc-ai-server-management-stack/*.ko
+/openbmc-ai-server-management-stack/*.mod
+/openbmc-ai-server-management-stack/*.mod.c
+/openbmc-ai-server-management-stack/*.mod.o
+/openbmc-ai-server-management-stack/.*.cmd
+/openbmc-ai-server-management-stack/.tmp_versions/
+/openbmc-ai-server-management-stack/Module.symvers
+/openbmc-ai-server-management-stack/modules.order
+
+
+# ── Misc ─────────────────────────────────────────
+/openbmc-ai-server-management-stack/*.log
+/openbmc-ai-server-management-stack/*.tmp
+/openbmc-ai-server-management-stack/.build_cache/
+/openbmc-ai-server-management-stack/__pycache__/
+/openbmc-ai-server-management-stack/.DS_Store
+
+/openbmc-ai-server-management-stack/build/
